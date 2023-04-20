@@ -1,0 +1,24 @@
+package ch06;
+
+import java.util.Scanner;
+
+public class PutAsteriskAlt2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("몇 개의 를 표시할까요?");
+		int n = stdIn.nextInt();
+		if(n>0) {
+			int i = 0;
+			while(i<n /2) {
+					System.out.print("*+");
+				i++;
+			}
+			if(n%2 == 1)
+				System.out.println('*');
+			System.out.println();
+		}
+	}
+
+}
